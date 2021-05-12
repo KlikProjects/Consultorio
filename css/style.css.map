@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/components/_elements.scss",
+        "../scss/components/_inputs.scss",
+        "../scss/components/_buttons.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
