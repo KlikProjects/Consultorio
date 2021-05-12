@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,AAAC,CACE,UAAU,CAAE,UAAU,CACtB,MAAM,CAAE,CAAE,CACV,OAAO,CAAE,CAAC,CACb,AAED,AAAA,IAAI,AAAC,CACD,gBAAgB,CATN,OAAkB,CAU5B,WAAW,CAAE,wCAAwC,CACxD",
+    "mappings": "AECA,AAAA,WAAW,AAAC,CDER,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CCFnB,KAAK,CDHA,GAAG,CCIX,ACJD,AAAA,GAAG,AAAC,CFGA,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CEHnB,gBAAgB,CFFX,GAAG,CEGX",
     "sources": [
-        "../scss/style.scss"
+        "../scss/style.scss",
+        "../scss/components/_elements.scss",
+        "../scss/components/_inputs.scss",
+        "../scss/components/_buttons.scss"
     ],
     "names": [],
     "file": "style.css"
