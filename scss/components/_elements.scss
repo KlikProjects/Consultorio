@@ -4,7 +4,8 @@
 $color_principal:#8E2F46;
 $color_header1:#9DD8DB;
 $color_headerBorder: #2C4050;
-$text_principal: 'Monoton';
+$text_principal: 'Monoton',
+cursive;
 @mixin display {
     display: flex;
     justify-content: center;
