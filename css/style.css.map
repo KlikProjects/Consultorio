@@ -1,10 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,+FAAI,CAyBZ,AAAA,IAAI,AAAC,CACD,MAAM,CAAE,GAAG,CACd,AC3BD,AAAA,QAAQ,AAAC,CDkBD,gBAAK,CAAE,8BAAY,CACnB,iBAAM,CAJN,SAAS,CAKT,eAAI,CAJN,KAAK,CAMP,MAAM,CAAE,KAAK,CCpBhB,AAED,AAAA,UAAU,AAAC,CDKP,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CCLtB,AAED,AAAA,aAAa,AAAC,CACV,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,gBAAgB,CDPL,OAAO,CCQlB,OAAO,CAAE,GAAG,CACZ,MAAM,CAAE,GAAG,CAAC,KAAK,CDRA,OAAO,CCSxB,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACb,AAED,AAAA,UAAU,AAAC,CACP,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,WAAW,CDfE,SAAS,CAC1B,OAAO,CCeH,WAAW,CAAE,GAAG,CACnB",
     "sources": [
         "../scss/style.scss",
         "../scss/components/_elements.scss",
-        "../scss/components/_inputs.scss",
+        "../scss/components/_generalPantallaCTO.scss",
+        "../scss/components/_form.scss",
         "../scss/components/_buttons.scss"
     ],
     "names": [],
