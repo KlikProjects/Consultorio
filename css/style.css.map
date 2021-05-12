@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,+FAAI,CCAZ,AAAA,cAAc,AAAA,CACV,KAAK,CAAE,WAAW,CACrB",
     "sources": [
         "../scss/style.scss",
         "../scss/components/_elements.scss",
-        "../scss/components/_inputs.scss",
-        "../scss/components/_buttons.scss"
+        "../scss/components/_form.scss",
+        "../scss/components/_buttons.scss",
+        "../scss/components/_html.scss"
     ],
     "names": [],
     "file": "style.css"
