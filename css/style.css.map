@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,GAAG,AAAC,CACA,KAAK,CAAE,IAAI,CACX,MAAM,CAAG,IAAI,CAChB",
+    "mappings": "",
     "sources": [
         "../scss/style.scss",
+        "../scss/components/_elements.scss",
+        "../scss/components/_inputs.scss",
         "../scss/components/_buttons.scss"
     ],
     "names": [],
