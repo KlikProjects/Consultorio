@@ -1,33 +1,36 @@
 <?php
 
-
 namespace App\Models;
 
 
 use App\Database;
 
-class Student
+class Cita
 {
-    private ?int $id;
-    private string $name;
-    private ?string $created_at;
-    private $database;
-    private $table = "students";
+    public ?int $id;
+    public string $nombre;
+    public string $consulta;
+    public ?string $resuelto;
+    public ?string $fecha;
+    public $database;
+    public $table = "citascoder";
 
-    public function __construct(string $name = '', int $id = null, string $created_at = null)
+    public function __construct(string $nombre = '', int $id = null, string $consulta = '', string $resuelto = null,string $fecha = null)
     {
-        $this->name = $name;
+        $this->nombre = $nombre;
         $this->id = $id;
-        $this->created_at = $created_at;
+        $this->consulta = $consulta;
+        $this->resuelto = $resuelto;
+        $this->fecha = $fecha;
 
         if (!$this->database) {
             $this->database = new Database();
         }
     }
 
-    public function getName()
+    public function getNombre()
     {
-        return $this->name;
+        return $this->nombre;
     }
 
     public function getId()
@@ -35,19 +38,24 @@ class Student
         return $this->id;
     }
 
-    public function getCreatedAt()
+    public function getConsulta()
     {
-        return $this->created_at;
+        return $this->consulta;
     }
 
-    public function rename($name)
+    public function getResuelto()
     {
-        $this->name = $name;
+        return $this->resuelto;
     }
 
-    public function save(): void
+    public function getFecha()
     {
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`) VALUES ('$this->name');");
+        return $this->fecha;
+    }
+    
+        public function save(): void
+    {
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`) VALUES ('$this->nombre');");
     }
 
     public function all()
