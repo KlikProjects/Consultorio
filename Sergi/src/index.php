@@ -1,5 +1,5 @@
 <?php
 
-require "../src/Controllers/CitaController.php"
+require "Controllers/CitaController.php";
 
 $controller = new CitaController();

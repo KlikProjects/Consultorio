@@ -1,5 +1,9 @@
 <?php
 
+// namespace App;
+
+// use PDO;
+// use PDOException;
 
 class Database
 {
@@ -11,7 +15,7 @@ class Database
         try {
             $this->mysql = $this->getConnection();
         } catch (PDOException $ex) {
-            echo "Ooooops, sois muy malos para el código !" . $ex->getMessage();
+            echo $ex->getMessage();
         }
     }
 
@@ -20,7 +24,7 @@ class Database
 
         $host = "localhost";
         $user = "root";
-        $pass = "root";
+        $pass = "";
         $database = "elconsultorio";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
