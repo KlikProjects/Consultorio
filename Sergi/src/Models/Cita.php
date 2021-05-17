@@ -15,7 +15,7 @@ class Cita
     public $database;
     public $table = "citascoders";
 
-    public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, int $id = null, string $resuelto = null)
+    public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, string $resuelto = null, int $id = null)
     {
         $this->nombre = $nombre;
         $this->id = $id;
@@ -65,7 +65,7 @@ class Cita
         $codersArray = $query->fetchAll();
         $coderList = [];
         foreach ($codersArray as $coder) {
-            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha']);
+            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha'], $coder['resuelto']);
             array_push($coderList, $coderItem);
         }
 
