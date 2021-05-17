@@ -50,8 +50,8 @@ class Cita
     {
         return $this->fecha;
     }
-    
-        public function save(): void
+
+    public function save(): void
     {
         $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', `$this ->consulta`);");
     }
@@ -59,50 +59,42 @@ class Cita
     public function all()
     {
         $prueba = new Database();
-        $query = $prueba -> mysql -> query('SELECT * FROM citascoders');
-        $codersArray = $query -> fetchAll();
+        $query = $prueba->mysql->query('SELECT * FROM citascoders');
+        $codersArray = $query->fetchAll();
         $coderList = [];
-        foreach($codersArray as $coder){
-            $coderItem = new Cita ($coder['nombre'], $coder['consulta'], $coder['fecha']);
-            array_push($coderList,$coderItem );
-           
+        foreach ($codersArray as $coder) {
+            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha']);
+            array_push($coderList, $coderItem);
         }
-        
+
         return $coderList;
-    
-    }
-    
-    public function deleteById($id)
-    {
-        $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$id}");
     }
 
-    public function delete()
-    {
-        $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$this->id}");
-    }
+    // public function deleteById($id)
+    // {
+    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$id}");
+    // }
 
-    public function findById($id)
-    {
-        $query = $this->database->mysql->query("SELECT * FROM `students` WHERE `id` = {$id}");
-        $result = $query->fetchAll();
+    // public function delete()
+    // {
+    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$this->id}");
+    // }
 
-        return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
-    }
+    // public function findById($id)
+    // {
+    //     $query = $this->database->mysql->query("SELECT * FROM `students` WHERE `id` = {$id}");
+    //     $result = $query->fetchAll();
 
-    public function UpdateById($data, $id)
-     {
-         $this->database->mysql->query("UPDATE `students` SET `name` =  '{$data["name"]}' WHERE `id` = {$id}");
-     }
+    //     return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
+    // }
 
-     public function Update()
-     {
-         $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
-     }
+    // public function UpdateById($data, $id)
+    //  {
+    //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$data["name"]}' WHERE `id` = {$id}");
+    //  }
+
+    //  public function Update()
+    //  {
+    //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
+    //  }
 }
-
-
-
-
-
-   
