@@ -22,7 +22,7 @@ class Database
 
         $host = "localhost";
         $user = "root";
-        $pass = "";
+        $pass = "root";
         $database = "elconsultorio";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
@@ -32,10 +32,3 @@ class Database
         return $pdo;
     }
 }
-
-
-$test = new Database();
-$query = $test -> mysql -> query('SELECT * FROM citascoders');
-print_r($query ->fetchAll());
-
-

@@ -22,12 +22,12 @@
 
             <tbody>
                 <?php
-                foreach ($data["students"] as $student) {
+                foreach ($data["citas"] as $cita) {
                     echo "
                     <tr>
-                        <td>{$student->getId()}</td>
-                        <td>{$student->getName()}</td>
-                        <td>{$student->getCreatedAt()}</td>
+                       
+                        <td>{$cita->getNombre()}</td>
+                        <td>{$cita->getConsulta()}</td>
                         <td>               
                         <a href='?action=edit&id={$student->getId()}'><i class='lnr lnr-pencil'></i></a>
                             <a href='?action=delete&id={$student->getId()}'><i class='lnr lnr-trash'></i></a>
