@@ -1,7 +1,10 @@
 <?php
 
-include "Models/Cita.php";
-include "Core/View.php";
+namespace App\Controllers;
+
+use App\Core\View;
+use App\Database;
+use App\Models\Cita;
 
 class CitaController
 
