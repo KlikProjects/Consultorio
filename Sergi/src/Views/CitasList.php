@@ -1,4 +1,5 @@
-<?php require_once("Components/Layout.php"); ?>
+<?php require_once("Components/Layout.php");
+?>
 
 <body>
 
@@ -22,10 +23,10 @@
 
             <tbody>
                 <?php
+
                 foreach ($data["citas"] as $cita) {
                     echo "
                     <tr>
-                       
                         <td>{$cita->getNombre()}</td>
                         <td>{$cita->getConsulta()}</td>
                         <td>               
