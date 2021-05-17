@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100;700&display=swap");.inputCheckbox{color:blaucomfuig}
-=======
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100;700&display=swap");body{margin:0px}.bodyCTO{background-image:url("/img/backgroundImg1.jpg");background-repeat:no-repeat;background-size:cover;height:100vh}.headerCTO{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.containerCTO{width:100vw;height:12vh;background-color:#9DD8DB;opacity:40%;border:2px solid #2C4050;position:relative;z-index:1}.txtHeader{position:absolute;z-index:2;font-family:"Monoton",cursive;font-weight:100}.inputCheckbox{color:blaucomfuig}
->>>>>>> 2f1041e4daa2f98e07706d9d987531260995bd72
 /*# sourceMappingURL=style.css.map */

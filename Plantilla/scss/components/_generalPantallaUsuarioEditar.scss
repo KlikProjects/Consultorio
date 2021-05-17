@@ -1,12 +1,12 @@
-.bodyCTO {
-    @include backgroundImage('../Plantilla/img/backgroundImg1.jpg');
+.bodyUsuarioEdit{
+    @include backgroundImage('/img/backgroudImg2.jpg');
 }
 
-.headerCTO {
+.headerUsuarioEdit{
     @include display;
 }
 
-.containerCTO {
+.containerUsuarioEdit{
     width: 100vw;
     height: 12vh;
     background-color: $color_header1;
@@ -14,15 +14,20 @@
     border: 2px solid $color_headerBorder;
     position: relative;
     z-index: 1;
+
 }
 
-.txtHeader {
+.txtHeader{
     position: absolute;
     z-index: 2;
     font-family: $text_principal;
     font-weight: 100;
 }
 
-.buttonDelete{
-    @include buttonDelete
+.buttonDelete {
+    height: 20px;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
 }

@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,+FAAI,CAwBZ,AAAA,IAAI,AAAC,CACD,MAAM,CAAE,GAAG,CACd,AC1BD,AAAA,QAAQ,AAAC,CDiBD,gBAAK,CAAE,8BAAY,CACnB,iBAAM,CAJN,SAAS,CAKT,eAAI,CAJN,KAAK,CAMP,MAAM,CAAE,KAAK,CCnBhB,AAED,AAAA,UAAU,AAAC,CDIP,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CCJtB,AAED,AAAA,aAAa,AAAC,CACV,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,gBAAgB,CDPL,OAAO,CCQlB,OAAO,CAAE,GAAG,CACZ,MAAM,CAAE,GAAG,CAAC,KAAK,CDRA,OAAO,CCSxB,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACb,AAED,AAAA,UAAU,AAAC,CACP,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,WAAW,CDfE,SAAS,CCgBtB,WAAW,CAAE,GAAG,CACnB,ACvBD,AAAA,cAAc,AAAA,CACV,KAAK,CAAE,WAAW,CACrB,ACFD,AAAA,aAAa,AAAC,CACV,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,gBAAgB,CAAE,WAAW,CAC7B,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,QAAQ,CACvB",
+    "sources": [
+        "../Plantilla/scss/style.scss",
+        "../Plantilla/scss/components/_elements.scss",
+        "../Plantilla/scss/components/_generalPantallaCTO.scss",
+        "../Plantilla/scss/components/_form.scss",
+        "../Plantilla/scss/components/_buttons.scss",
+        "../Plantilla/scss/components/_html.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
