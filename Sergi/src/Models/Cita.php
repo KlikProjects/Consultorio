@@ -1,6 +1,9 @@
 <?php
 
-include "Database.php";
+namespace App\Models;
+
+use App\Database;
+
 
 
 class Cita
@@ -11,7 +14,7 @@ class Cita
     public ?string $resuelto;
     public ?string $fecha;
     public $database;
-    public $table = "citascoder";
+    public $table = "citascoders";
 
     public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, int $id = null, string $resuelto = null)
     {
@@ -53,7 +56,7 @@ class Cita
 
     public function save(): void
     {
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', `$this ->consulta`);");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', '$this->consulta');");
     }
 
     public function all()
