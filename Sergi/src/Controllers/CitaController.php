@@ -1,7 +1,7 @@
 <?php
 
-include "../Models/Cita.php";
-include "./Sergi/src/Core/View.php";
+include "Models/Cita.php";
+include "Core/View.php";
 
 class CitaController
 
@@ -9,7 +9,6 @@ class CitaController
 
     public function __construct()
     {
-        
         
     
         $this->index();
@@ -33,3 +32,4 @@ class CitaController
     }
 
 }
+
