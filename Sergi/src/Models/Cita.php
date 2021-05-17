@@ -1,9 +1,7 @@
 <?php
 
-namespace App\Models;
+include "Database.php";
 
-
-use App\Database;
 
 class Cita
 {
@@ -15,7 +13,7 @@ class Cita
     public $database;
     public $table = "citascoder";
 
-    public function __construct(string $nombre = '', int $id = null, string $consulta = '', string $resuelto = null,string $fecha = null)
+    public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, int $id = null, string $resuelto = null)
     {
         $this->nombre = $nombre;
         $this->id = $id;
@@ -52,50 +50,51 @@ class Cita
     {
         return $this->fecha;
     }
-    
-        public function save(): void
+
+    public function save(): void
     {
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`) VALUES ('$this->nombre');");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', `$this ->consulta`);");
     }
 
     public function all()
     {
-        $query = $this->database->mysql->query("select * FROM {$this->table}");
-        $studentsArray = $query->fetchAll();
-        $studentList = [];
-        foreach ($studentsArray as $student) {
-            $studentItem = new Student($student["name"], $student["id"], $student["created_at"]);
-            array_push($studentList, $studentItem);
+        $prueba = new Database();
+        $query = $prueba->mysql->query('SELECT * FROM citascoders');
+        $codersArray = $query->fetchAll();
+        $coderList = [];
+        foreach ($codersArray as $coder) {
+            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha']);
+            array_push($coderList, $coderItem);
         }
 
-        return $studentList;
+        return $coderList;
     }
 
-    public function deleteById($id)
-    {
-        $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$id}");
-    }
+    // public function deleteById($id)
+    // {
+    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$id}");
+    // }
 
-    public function delete()
-    {
-        $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$this->id}");
-    }
+    // public function delete()
+    // {
+    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$this->id}");
+    // }
 
-    public function findById($id)
-    {
-        $query = $this->database->mysql->query("SELECT * FROM `students` WHERE `id` = {$id}");
-        $result = $query->fetchAll();
+    // public function findById($id)
+    // {
+    //     $query = $this->database->mysql->query("SELECT * FROM `students` WHERE `id` = {$id}");
+    //     $result = $query->fetchAll();
 
-        return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
-    }
+    //     return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
+    // }
 
-    public function UpdateById($data, $id)
-    {
-        $this->database->mysql->query("UPDATE `students` SET `name` =  '{$data["name"]}' WHERE `id` = {$id}");
-    }
+    // public function UpdateById($data, $id)
+    //  {
+    //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$data["name"]}' WHERE `id` = {$id}");
+    //  }
 
-    public function Update()
-    {
-        $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
-    }
+    //  public function Update()
+    //  {
+    //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
+    //  }
 }

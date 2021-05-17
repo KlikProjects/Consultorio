@@ -1,5 +1,9 @@
 .bodyCTO {
+<<<<<<< HEAD:Plantilla/scss/components/_generalPantallaCTO.scss
     @include backgroundImage('../Plantilla/img/backgroundImg1.jpg');
+=======
+    @include backgroundImage('Plantilla/public/img/backgroundImg1.jpg');
+>>>>>>> 7b685d6f153e082c9dfe85c1d729f91642a7d389:Plantilla/public/scss/components/_generalPantallaCTO.scss
 }
 
 .headerCTO {

@@ -10,8 +10,6 @@ class Database
     {
         try {
             $this->mysql = $this->getConnection();
-         
-           
         } catch (PDOException $ex) {
             echo "Ooooops, sois muy malos para el código !" . $ex->getMessage();
         }
@@ -32,10 +30,3 @@ class Database
         return $pdo;
     }
 }
-
-
-$test = new Database();
-$query = $test -> mysql -> query('SELECT * FROM citascoders');
-print_r($query ->fetchAll());
-
-

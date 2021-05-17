@@ -1,8 +1,5 @@
 <?php
 
-namespace App;
+require "Controllers/CitaController.php";
 
-use App\Controllers\StudentController;
-
-
-$controller = new StudentController();
+$controller = new CitaController();
