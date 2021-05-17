@@ -1,9 +1,10 @@
 .buttonDelete {
-    height: auto;
-    width: 20px;
-    background-color: red;
-    border: none;
-    align-self: flex-end;
+    @include btDelete();
+    @include display();
+}
+
+.imgDelete {
+    @include imgDelete();
 }
 
 .buttonsPrincipals {}

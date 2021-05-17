@@ -1,32 +1,24 @@
-.bodyCTO {
-<<<<<<< HEAD:Plantilla/scss/components/_generalPantallaCTO.scss
-    @include backgroundImage('../Plantilla/img/backgroundImg1.jpg');
-=======
-    @include backgroundImage('Plantilla/public/img/backgroundImg1.jpg');
->>>>>>> 7b685d6f153e082c9dfe85c1d729f91642a7d389:Plantilla/public/scss/components/_generalPantallaCTO.scss
-}
-
-.headerCTO {
-    @include display;
-}
-
-.containerCTO {
-    width: 100vw;
-    height: 12vh;
-    background-color: $color_header1;
-    opacity: 40%;
-    border: 2px solid $color_headerBorder;
-    position: relative;
-    z-index: 1;
-}
-
-.txtHeader {
-    position: absolute;
-    z-index: 2;
-    font-family: $text_principal;
-    font-weight: 100;
-}
-
-.buttonDelete{
-    @include buttonDelete
-}
+    .bodyCTO {
+        @include backgroundImage('../img/backgroundImg1.jpg');
+    }
+    
+    .headerCTO {
+        @include display;
+    }
+    
+    .containerCTO {
+        width: 100vw;
+        height: 12vh;
+        background-color: $color_header1;
+        opacity: 40%;
+        border: 2px solid $color_headerBorder;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .txtHeader {
+        position: absolute;
+        z-index: 2;
+        font-family: $text_principal;
+        font-weight: 100;
+    }
