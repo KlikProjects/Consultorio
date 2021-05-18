@@ -72,20 +72,21 @@ class Cita
         return $coderList;
     }
 
-    // public function deleteById($id)
-    // {
-    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$id}");
-    // }
+    public function deleteById($id)
+    {
+    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$id}");
+    }
 
-    // public function delete()
-    // {
-    //     $query = $this->database->mysql->query("DELETE FROM `students` WHERE `students`.`id` = {$this->id}");
-    // }
+    public function delete()
+    {
+    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$this->id}");
+    }
 
-    // public function findById($id)
-    // {
-    //     $query = $this->database->mysql->query("SELECT * FROM `students` WHERE `id` = {$id}");
-    //     $result = $query->fetchAll();
+    public function findById($id)
+    {
+    $query = $this->database->mysql->query("SELECT * FROM `cita` WHERE `id` = {$id}");
+    $result = $query->fetchAll();
+    }
 
     //     return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
     // }
@@ -99,4 +100,4 @@ class Cita
     //  {
     //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
     //  }
-}
+    }
