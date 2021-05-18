@@ -48,11 +48,7 @@ textarea[type=text] {
 .formBoxTwoCto {}
 
 .boxConsulta {
-    width: 85vw;
-    height: 6vh;
-    background-color: transparent;
-    border: none;
-    margin-top: 2%;
+  @include boxConsulta();
 }
 
 .checkbox {
@@ -63,6 +59,22 @@ textarea[type=text] {
 
 .formBoxTwoUsuario {}
 
-.formBoxOneConsulta {}
+.formBoxOneConsulta {
+  @include formBoxOneConsulta();
+}
 
-.formBoxTwoConsulta {}
+.formBoxTwoConsulta {
+    @include formBoxTwoConsulta();
+    }
+
+.boxConsulta2{
+    @include boxConsulta2();
+   
+
+}
+
+.boxName2{
+    @include boxName2();
+    
+}
+ 
