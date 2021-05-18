@@ -8,7 +8,8 @@
         <h2 class="text-center">Nuevo Estudiante</h2>
 
         <form action='?action=store' method="post">
-            <input type="text" name="name" required>
+            <input type="text" name="name" required placeholder="Nombre">
+            <input type="text" name="consulta" placeholder="Consulta">
             <input type="submit" value="Crear">
             <input type="reset" value="Reset">
         </form>

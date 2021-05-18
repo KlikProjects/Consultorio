@@ -1,0 +1,12 @@
+.buttonDelete {
+    @include btDelete();
+    @include display();
+}
+
+.imgDelete {
+    @include imgDelete();
+}
+
+.buttonsPrincipals {}
+
+.buttonBack_Next {}

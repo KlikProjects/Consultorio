@@ -22,6 +22,19 @@ $size:cover) {
     height: 100vh;
 }
 
+@mixin btDelete() {
+    width: 17px;
+    height: 17px;
+    background-color: $color_principal;
+    border: none;
+}
+
+@mixin imgDelete {
+    width: 10px;
+    height: auto;
+    filter: invert(100%);
+}
+
 body {
     margin: 0px;
 }

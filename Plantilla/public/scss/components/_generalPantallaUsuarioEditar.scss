@@ -1,12 +1,12 @@
-.bodyCTO {
-    @include backgroundImage('/img/backgroundImg1.jpg');
+.bodyUsuarioEdit {
+    @include backgroundImage('../img/backgroundImg2.jpg');
 }
 
-.headerCTO {
+.headerUsuarioEdit {
     @include display;
 }
 
-.containerCTO {
+.containerUsuarioEdit {
     width: 100vw;
     height: 12vh;
     background-color: $color_header1;
@@ -21,4 +21,8 @@
     z-index: 2;
     font-family: $text_principal;
     font-weight: 100;
+}
+
+.imgDelete {
+    @include imgDelete();
 }

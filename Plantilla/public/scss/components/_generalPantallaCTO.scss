@@ -1,0 +1,24 @@
+    .bodyCTO {
+        @include backgroundImage('../img/backgroundImg1.jpg');
+    }
+    
+    .headerCTO {
+        @include display;
+    }
+    
+    .containerCTO {
+        width: 100vw;
+        height: 12vh;
+        background-color: $color_header1;
+        opacity: 40%;
+        border: 2px solid $color_headerBorder;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .txtHeader {
+        position: absolute;
+        z-index: 2;
+        font-family: $text_principal;
+        font-weight: 100;
+    }
