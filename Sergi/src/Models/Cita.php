@@ -13,9 +13,9 @@ class Cita
     public ?string $resuelto;
     public ?string $fecha;
     public $database;
-    public $table = "citascoder";
+    public $table = "citascoders";
 
-    public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, int $id = null, string $resuelto = null)
+    public function __construct(string $nombre = '', string $consulta = '', string $fecha = null, string $resuelto = null, int $id = null)
     {
         $this->nombre = $nombre;
         $this->id = $id;
@@ -55,7 +55,7 @@ class Cita
 
     public function save(): void
     {
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', `$this ->consulta`);");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`nombre`, `consulta`) VALUES ('$this->nombre', '$this->consulta');");
     }
 
     public function all()
@@ -65,7 +65,7 @@ class Cita
         $codersArray = $query->fetchAll();
         $coderList = [];
         foreach ($codersArray as $coder) {
-            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha']);
+            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha'], $coder['resuelto']);
             array_push($coderList, $coderItem);
         }
 

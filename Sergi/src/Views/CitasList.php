@@ -14,11 +14,10 @@
 
             <thead class="thead-light">
                 <tr>
-                    <th>id</th>
                     <th>Nombre</th>
                     <th>Consulta</th>
-                    <th>Resuelto</th>
                     <th>Fecha</th>
+                    <th>Resuelto</th>
                 </tr>
             </thead>
 
@@ -30,6 +29,8 @@
                     <tr>
                         <td>{$cita->getNombre()}</td>
                         <td>{$cita->getConsulta()}</td>
+                        <td>{$cita->getFecha()}</td>
+                        <td>{$cita->getResuelto()}</td>
                         
                     </tr>
                     ";
