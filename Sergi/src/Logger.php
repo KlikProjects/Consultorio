@@ -1,9 +1,12 @@
 <?php
 
+if(isset($_POST['name']) && isset($POST['consulta'])){
 
-$logFile = fopen("log.txt", 'a') or die("Error creando archivo");
+    $logFile = fopen("log.txt", 'a') or die("Error creando archivo");
 
-fwrite($logFile, "\n".date("d/m/Y H:i:s"). " {$_POST['name']}" . " ha hecho una consulta: " . $_POST['consulta']) or die("Error escribiendo en el archivo");
+    fwrite($logFile, "\n".date("d/m/Y H:i:s"). " {$_POST['name']}" . " ha hecho una consulta: " . $_POST['consulta']) or die("Error escribiendo en el archivo");
 
-fclose($logFile);
+    fclose($logFile);
+}
+
 ?>
