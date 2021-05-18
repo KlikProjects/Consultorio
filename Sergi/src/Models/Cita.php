@@ -76,12 +76,12 @@ class Cita
 
     public function deleteById($id)
     {
-    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$id}");
+    $query = $this->database->mysql->query("DELETE FROM `citascoders` WHERE `citascoders`.`id` = {$id}");
     }
 
     public function delete()
     {
-    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$this->id}");
+    $query = $this->database->mysql->query("DELETE FROM `citascoders` WHERE `citascoders`.`id` = {$this->id}");
     }
 
     public function findById($id)

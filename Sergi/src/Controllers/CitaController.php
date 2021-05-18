@@ -70,9 +70,9 @@ class CitaController
 
     public function delete($id)
     {
-        $editCita = new Cita();
-        $cita = $editCita->findById($id);
-        $editCita->delete();
+        $deleteCita = new Cita();
+        $cita = $deleteCita->findById($id);
+        $cita->delete();
 
         $this->index();
     }
