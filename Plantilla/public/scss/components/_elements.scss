@@ -4,11 +4,32 @@
 $color_principal:#8E2F46;
 $color_header1:#9DD8DB;
 $color_headerBorder: #2C4050;
-$text_principal: 'Monoton';
+$text_principal: 'Monoton',cursive;
+$text_general: 'Roboto',sans-serif;
 @mixin display {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin btPrincipal{
+    width: 100px;
+    height: 30px;
+    background: rgba(157, 216, 219, 0.7);
+    border: 2px solid $color_principal;
+    font-family:$text_general;    
+    color:$color_principal; 
+    font-weight: bold;
+    margin:5px;
+       
+}
+
+@mixin btPrincipalTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
 }
 
 @mixin backgroundImage($imgSrc,
@@ -20,6 +41,35 @@ $size:cover) {
         size: $size;
     }
     height: 100vh;
+}
+
+@mixin buttonBack_Next{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(157, 216, 219, 0.7); 
+    margin-bottom: 10px;
+}
+
+@mixin imgBtBack_Next {
+    width: 50%;
+    height: auto;
+    filter: invert(100%);
+    
+    
+}
+
+@mixin buttonBack{
+    transform: rotate(200grad);
+}
+
+@mixin footerContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 300px;
 }
 
 @mixin btDelete() {

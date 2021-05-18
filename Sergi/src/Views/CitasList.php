@@ -14,10 +14,11 @@
 
             <thead class="thead-light">
                 <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Created At</th>
-                    <th>Options</th>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Consulta</th>
+                    <th>Resuelto</th>
+                    <th>Fecha</th>
                 </tr>
             </thead>
 
