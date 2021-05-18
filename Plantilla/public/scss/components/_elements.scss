@@ -109,7 +109,7 @@ body {
     margin: 1%;
 }
 
- @mixin formBoxTwoConsulta {
+@mixin formBoxTwoConsulta {
     background: rgba($color_inputs2, 0.8);
     border: 2px solid $color_principal;
     height: 20vh;
@@ -117,31 +117,35 @@ body {
     margin: 1%;
 }
 
-@mixin boxConsulta{
+@mixin boxConsulta {
     width: 85vw;
     height: 6vh;
     background-color: transparent;
     border: none;
-    margin-top: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
+    font-family: $text_general;
+    font-weight: 100;
 }
 
-@mixin boxConsulta2{
+@mixin boxConsulta2 {
     @include display();
     width: 80vw;
     background-color: transparent;
     border: transparent;
-
+    color: white;
+    font-family: $text_general;
+    font-weight: 100;
 }
 
-@mixin boxName2{
+@mixin boxName2 {
     @include display();
-    width: 80vw;
+    width: 100%;
     margin-top: 5px;
     background-color: transparent;
     border: transparent;
-    input.boxName2[type="text"]{
-        color:white;
-    
-    } 
-    
+    input.boxName2[type="text"] {
+        color: white;
+    }
 }

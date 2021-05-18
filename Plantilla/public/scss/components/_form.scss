@@ -22,6 +22,14 @@
     width: 57vw;
 }
 
+.txtInput {
+    @include display();
+    @include inputsText();
+    font-family: $text_general;
+    font-weight: 100;
+    justify-content: flex-start;
+}
+
 input[type=text] {
     @include inputsText();
 }
@@ -32,7 +40,8 @@ input[type=date] {
 
 textarea[type=text] {
     @include inputsText();
-    color: white;
+    color: black;
+    padding-top: 2%;
 }
 
 .formBoxOne {
@@ -48,7 +57,9 @@ textarea[type=text] {
 .formBoxTwoCto {}
 
 .boxConsulta {
-  @include boxConsulta();
+    @include boxConsulta();
+    @include inputsText();
+    color: white;
 }
 
 .checkbox {
@@ -60,21 +71,19 @@ textarea[type=text] {
 .formBoxTwoUsuario {}
 
 .formBoxOneConsulta {
-  @include formBoxOneConsulta();
+    @include formBoxOneConsulta();
+    display: flex;
+    justify-content: flex-end;
 }
 
 .formBoxTwoConsulta {
     @include formBoxTwoConsulta();
-    }
+}
 
-.boxConsulta2{
+.boxConsulta2 {
     @include boxConsulta2();
-   
-
 }
 
-.boxName2{
+.boxName2 {
     @include boxName2();
-    
 }
- 
