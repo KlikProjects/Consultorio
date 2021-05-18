@@ -1,6 +1,7 @@
 .buttonDelete {
     @include btDelete();
     @include display();
+    align-self: flex-start;
 }
 
 .imgDelete {

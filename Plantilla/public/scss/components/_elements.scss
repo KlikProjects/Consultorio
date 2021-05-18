@@ -4,6 +4,7 @@
 $color_principal:#8E2F46;
 $color_header1:#9DD8DB;
 $color_headerBorder: #2C4050;
+$color_inputs: #E5E5E5;
 $text_principal: 'Monoton';
 @mixin display {
     display: flex;
@@ -33,6 +34,13 @@ $size:cover) {
     width: 10px;
     height: auto;
     filter: invert(100%);
+}
+
+@mixin inputs {
+    background-color: $color_inputs;
+    border: none;
+    border-radius: 10px;
+    height: 28px;
 }
 
 body {

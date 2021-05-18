@@ -1,49 +1,46 @@
-.inputCheckbox{
-    color: blaucomfuig;
+.inputCheckbox {}
+
+.formBoxComplete {
+    @include display();
 }
 
-.formBoxComplete{
-    
+.boxDate_name {
+    @include display();
+    flex-wrap: wrap
 }
 
-.boxDate_name{
-
+.boxDate {
+    @include inputs();
+    width: 25vw;
+    margin-right: 1.5%;
 }
 
-.boxDate{
-
+.boxName {
+    @include inputs();
+    width: 60vw;
 }
 
-.boxName{
-
+.formBoxOne {
+    @include display();
+    background: rgba($color_principal, 0.4);
+    border: 2px solid $color_principal;
+    height: 12vh;
+    width: 95vw;
+    margin: 1%;
 }
 
-.formBoxOne{
+.formBoxTwoCto {}
 
+.boxConsulta {
+    width: 85vw;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    margin-top: 2%;
 }
 
-.formBoxTwoCto {
-    
-}
+.formBoxTwoUsuario {}
 
-.boxConsulta{
+.formBoxOneConsulta {}
 
-}
-
-
-.formBoxTwoUsuario{
-    
-}
-
-.formBoxOneConsulta {
-    
-}
-
-.formBoxTwoConsulta {
-
-}
-
-
-
-
-
+.formBoxTwoConsulta {}
