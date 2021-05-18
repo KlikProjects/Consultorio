@@ -5,6 +5,7 @@ $color_principal:#8E2F46;
 $color_header1:#9DD8DB;
 $color_headerBorder: #2C4050;
 $color_inputs: #E5E5E5;
+$color_inputs2:#BAA2AC;
 $text_principal: 'Monoton',
 cursive;
 $text_general: 'Roboto',
@@ -93,4 +94,49 @@ $size:cover) {
 
 body {
     margin: 0px;
+}
+
+@mixin formBoxOneConsulta {
+    background: rgba($color_inputs2, 0.8);
+    border: 2px solid $color_principal;
+    height: 5vh;
+    width: 95vw;
+    margin: 1%;
+}
+
+ @mixin formBoxTwoConsulta {
+    background: rgba($color_inputs2, 0.8);
+    border: 2px solid $color_principal;
+    height: 20vh;
+    width: 95vw;
+    margin: 1%;
+}
+
+@mixin boxConsulta{
+    width: 85vw;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    margin-top: 2%;
+}
+
+@mixin boxConsulta2{
+    @include display();
+    width: 80vw;
+    background-color: transparent;
+    border: transparent;
+
+}
+
+@mixin boxName2{
+    @include display();
+    width: 80vw;
+    margin-top: 5px;
+    background-color: transparent;
+    border: transparent;
+    input.boxName2[type="text"]{
+        color:white;
+    
+    } 
+    
 }

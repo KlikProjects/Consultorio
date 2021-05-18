@@ -4,4 +4,8 @@
 
 .footerContainer {}
 
-.mainContainerSelectDate {}
+.mainContainerSelectDate {
+@include display();
+flex-direction: column;
+
+}
