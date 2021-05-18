@@ -3,6 +3,11 @@
 .mainContainerAllDate {
     overflow: scroll;
     height: 78vh;
+    scrollbar-width: none;
+}
+
+.mainContainerAllDate::-webkit-scrollbar {
+    display: none;
 }
 
 .mainContainerSelectDate {}
