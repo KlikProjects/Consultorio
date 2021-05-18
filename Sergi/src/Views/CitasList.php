@@ -14,10 +14,10 @@
 
             <thead class="thead-light">
                 <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Created At</th>
-                    <th>Options</th>
+                    <th>Nombre</th>
+                    <th>Consulta</th>
+                    <th>Fecha</th>
+                    <th>Resuelto</th>
                 </tr>
             </thead>
 
@@ -29,6 +29,8 @@
                     <tr>
                         <td>{$cita->getNombre()}</td>
                         <td>{$cita->getConsulta()}</td>
+                        <td>{$cita->getFecha()}</td>
+                        <td>{$cita->getResuelto()}</td>
                         
                     </tr>
                     ";
