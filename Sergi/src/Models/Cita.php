@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Models;
 
 use App\Database;
@@ -70,6 +71,15 @@ class Cita
         }
 
         return $coderList;
+    }
+
+    
+    public function findById($id)
+    {
+        $query = $this->database->mysql->query("SELECT * FROM `citascoders` WHERE `id` = {$id}");
+        $result = $query->fetchAll();
+
+        return new Cita($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
     }
 
     // public function deleteById($id)
