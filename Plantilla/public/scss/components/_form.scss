@@ -2,6 +2,8 @@
 
 .formBoxComplete {
     @include display();
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .boxDate_name {
@@ -11,13 +13,26 @@
 
 .boxDate {
     @include inputs();
-    width: 25vw;
+    width: 24vw;
     margin-right: 1.5%;
 }
 
 .boxName {
     @include inputs();
-    width: 60vw;
+    width: 57vw;
+}
+
+input[type=text] {
+    @include inputsText();
+}
+
+input[type=date] {
+    @include inputsText();
+}
+
+textarea[type=text] {
+    @include inputsText();
+    color: white;
 }
 
 .formBoxOne {
@@ -25,8 +40,9 @@
     background: rgba($color_principal, 0.4);
     border: 2px solid $color_principal;
     height: 12vh;
-    width: 95vw;
+    width: 97vw;
     margin: 1%;
+    position: relative;
 }
 
 .formBoxTwoCto {}
@@ -37,6 +53,12 @@
     background-color: transparent;
     border: none;
     margin-top: 2%;
+}
+
+.checkbox {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
 }
 
 .formBoxTwoUsuario {}

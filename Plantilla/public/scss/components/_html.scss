@@ -1,7 +1,16 @@
 .bodyContainer {}
 
-.mainContainerAllDate {}
-
-.footerContainer {}
+.mainContainerAllDate {
+    overflow: scroll;
+    height: 78vh;
+}
 
 .mainContainerSelectDate {}
+
+.footerContainer {
+    @include footerContainer();
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    height: 10vh;
+}
