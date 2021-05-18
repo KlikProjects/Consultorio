@@ -1,49 +1,89 @@
-.inputCheckbox{
-    color: blaucomfuig;
+.inputCheckbox {}
+
+.formBoxComplete {
+    @include display();
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-.formBoxComplete{
-    
+.boxDate_name {
+    @include display();
+    flex-wrap: wrap
 }
 
-.boxDate_name{
-
+.boxDate {
+    @include inputs();
+    width: 24vw;
+    margin-right: 1.5%;
 }
 
-.boxDate{
-
+.boxName {
+    @include inputs();
+    width: 57vw;
 }
 
-.boxName{
-
+.txtInput {
+    @include display();
+    @include inputsText();
+    font-family: $text_general;
+    font-weight: 100;
+    justify-content: flex-start;
 }
 
-.formBoxOne{
-
+input[type=text] {
+    @include inputsText();
 }
 
-.formBoxTwoCto {
-    
+input[type=date] {
+    @include inputsText();
 }
 
-.boxConsulta{
-
+textarea[type=text] {
+    @include inputsText();
+    color: black;
+    padding-top: 2%;
 }
 
-
-.formBoxTwoUsuario{
-    
+.formBoxOne {
+    @include display();
+    background: rgba($color_principal, 0.4);
+    border: 2px solid $color_principal;
+    height: 12vh;
+    width: 97vw;
+    margin: 1%;
+    position: relative;
 }
+
+.formBoxTwoCto {}
+
+.boxConsulta {
+    @include boxConsulta();
+    @include inputsText();
+    color: white;
+}
+
+.checkbox {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.formBoxTwoUsuario {}
 
 .formBoxOneConsulta {
-    
+    @include formBoxOneConsulta();
+    display: flex;
+    justify-content: flex-end;
 }
 
 .formBoxTwoConsulta {
-
+    @include formBoxTwoConsulta();
 }
 
+.boxConsulta2 {
+    @include boxConsulta2();
+}
 
-
-
-
+.boxName2 {
+    @include boxName2();
+}

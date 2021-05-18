@@ -32,7 +32,13 @@ class CitaController
             return;
         }
     
-        $this -> index();
+        if (isset($_GET["action"]) && ($_GET["action"] == "delete")) {
+
+            $this->delete($_GET["id"]);
+            return;
+        }
+
+        $this->index();
     }
 
     public function index()
@@ -49,7 +55,7 @@ class CitaController
 
     public function create(): void
     {
-        new View("CreateStudent");
+        new View("CreateCita");
     }
 
     public function store(array $request): void
@@ -60,13 +66,27 @@ class CitaController
         $this -> index();
     }
 
+
+
+    public function delete($id)
+    {
+        $editCita = new Cita();
+        $cita = $editCita->findById($id);
+        $editCita->delete();
+
+        $this->index();
+    }
+
     public function edit($id)
     {
-     
-        $citaHelper = new Cita();
-        $cita = $citaHelper->findById($id);
+        //Find Cita By Id
+        $editCita = new Cita();
+        $cita = $editCita->findById ($id);
         
-        new View("EditCita", ["student" => $student]);
+        //Execute view of the cita with information
+        new View("EditCita", ["cita" => $cita]);
     }
+
+
 }
 
