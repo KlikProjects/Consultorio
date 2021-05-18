@@ -1,12 +1,33 @@
 .buttonDelete {
     @include btDelete();
     @include display();
+    align-self: flex-start;
+    justify-self: end;
 }
 
 .imgDelete {
     @include imgDelete();
 }
 
-.buttonsPrincipals {}
+.buttonsPrincipals {
+    @include btPrincipal();
+}
 
-.buttonBack_Next {}
+.btPrincipalTotal {
+    @include btPrincipalTotal();
+}
+
+.buttonBack_Next {
+    @include buttonBack_Next();
+    @include display();
+}
+
+.buttonBack {
+    @include buttonBack_Next();
+    @include buttonBack();
+    @include display();
+}
+
+.imgBtBack_Next {
+    @include imgBtBack_Next();
+}
