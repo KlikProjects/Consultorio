@@ -1,10 +1,15 @@
 <?php
 
+
+
 namespace App\Controllers;
 
 use App\Core\View;
 use App\Database;
 use App\Models\Cita;
+
+
+require_once("./src/Logger.php"); 
 
 class CitaController
 
@@ -13,6 +18,7 @@ class CitaController
     {
         if (isset($_GET["action"]) && ($_GET["action"] == "create")) {
             $this->create();
+            
             return;
         }
 
@@ -20,7 +26,18 @@ class CitaController
             $this->store($_POST);
             return;
         }
+
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit")) {
+            $this->edit($_GET["id"]);
+            return;
+        }
     
+        if (isset($_GET["action"]) && ($_GET["action"] == "delete")) {
+
+            $this->delete($_GET["id"]);
+            return;
+        }
+
         $this->index();
     }
 
@@ -34,16 +51,42 @@ class CitaController
         ]);
     }
 
+    
+
     public function create(): void
     {
-        new View("CreateStudent");
+        new View("CreateCita");
     }
 
     public function store(array $request): void
     {
         $nuevaCita = new Cita($request['name'], $request['consulta']);
         $nuevaCita -> save();
+
+        $this -> index();
+    }
+
+
+
+    public function delete($id)
+    {
+        $editCita = new Cita();
+        $cita = $editCita->findById($id);
+        $editCita->delete();
+
         $this->index();
     }
+
+    public function edit($id)
+    {
+        //Find Cita By Id
+        $editCita = new Cita();
+        $cita = $editCita->findById ($id);
+        
+        //Execute view of the cita with information
+        new View("EditCita", ["cita" => $cita]);
+    }
+
+
 }
 
