@@ -70,18 +70,18 @@ class CitaController
 
     public function delete($id)
     {
-        $editCita = new Cita();
-        $cita = $editCita->findById($id);
-        $editCita->delete();
+        $deleteCita = new Cita();
+        $cita = $deleteCita->findById($id);
+        $cita->delete();
 
         $this->index();
     }
 
     public function edit($id)
     {
-        //Find Cita By Id
         $editCita = new Cita();
-        $cita = $editCita->findById ($id);
+        $cita = $editCita->findById($id);
+
         
         //Execute view of the cita with information
         new View("EditCita", ["cita" => $cita]);

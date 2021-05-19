@@ -6,6 +6,7 @@ namespace App\Models;
 use App\Database;
 
 
+
 class Cita
 {
     public ?int $id;
@@ -66,7 +67,7 @@ class Cita
         $codersArray = $query->fetchAll();
         $coderList = [];
         foreach ($codersArray as $coder) {
-            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha'], $coder['resuelto']);
+            $coderItem = new Cita($coder['nombre'], $coder['consulta'], $coder['fecha'], $coder['resuelto'], $coder['id']);
             array_push($coderList, $coderItem);
         }
 
@@ -75,18 +76,22 @@ class Cita
 
     public function deleteById($id)
     {
-    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$id}");
+    $query = $this->database->mysql->query("DELETE FROM `citascoders` WHERE `citascoders`.`id` = {$id}");
     }
 
     public function delete()
     {
-    $query = $this->database->mysql->query("DELETE FROM `cita` WHERE `cita`.`id` = {$this->id}");
+    $query = $this->database->mysql->query("DELETE FROM `citascoders` WHERE `citascoders`.`id` = {$this->id}");
     }
 
     public function findById($id)
     {
-    $query = $this->database->mysql->query("SELECT * FROM `cita` WHERE `id` = {$id}");
+    $query = $this->database->mysql->query("SELECT * FROM `citascoders` WHERE `id` = {$id}");
     $result = $query->fetchAll();
+    $cita = new Cita($result[0]['nombre'], $result[0]['consulta'], $result[0]['fecha'], $result[0]['resuelto'], $result[0]['id']);
+        
+    return $cita;
+
     }
 
     //     return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
@@ -102,3 +107,5 @@ class Cita
     //      $this->database->mysql->query("UPDATE `students` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
     //  }
     }
+
+

@@ -33,7 +33,7 @@
                         <td>{$cita->getResuelto()}</td>
                         <td>
                         <a href='?action=edit&id={$cita ->getId()}'><i class='lnr lnr-pencil'></i></a>
-                            <a href='?action=delete&id={}'><i class='lnr lnr-trash'></i></a>
+                            <a href='?action=delete&id={$cita ->getId()}'><i class='lnr lnr-trash'></i></a>
                         </td>
                     </tr>
                     ";
