@@ -1,47 +1,41 @@
-<?php require_once("Components/Layout.php");
-?>
+<?php require_once("Components/Layout.php"); ?>
 
-<body>
 
-    <?php require_once("Components/Header.php") ?>
-    <main class="container">
-        <a href="?action=create">
-            <button class="btn btn-primary btn-circle btn-lg">
-                <i class="fas fa-plus"></i>
-            </button>
-        </a>
-        <table class="table table-light">
+<body class="bodyCTO">
+    <?php require_once("Components/HeaderCTO.php"); ?>
 
-            <thead class="thead-light">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Consulta</th>
-                    <th>Fecha</th>
-                    <th>Resuelto</th>
-                </tr>
-            </thead>
+    <main class="mainContainerAllDate">
+        <div class="formBoxComplete">
 
-            <tbody>
-                <?php
+            <?php
+            foreach ($data["citas"] as $cita) {
+                echo "
+            <div class='formBoxOne'>
+                <div class='boxDate_name'>
+                    <p class='boxDate txtInput'>
+                    {$cita->getFecha()}</p>
+                    <p class='boxName txtInput'>{$cita->getNombre()}</p>
+                    <p class='boxConsulta'>{$cita->getConsulta()}</p>
+                </div>
+                <a href='?action=delete&id={$cita->getId()}'>
+                <button class='buttonDelete'>
+                    <img src='./public/img/delete.svg' alt='close' class='imgDelete' />
+                </button>
+                </a>
+            </div> ";
+            } ?>
 
-                foreach ($data["citas"] as $cita) {
-                    echo "
-                    <tr>
-                        <td>{$cita->getNombre()}</td>
-                        <td>{$cita->getConsulta()}</td>
-                        <td>{$cita->getFecha()}</td>
-                        <td>{$cita->getResuelto()}</td>
-                        <td>
-                        <a href='?action=edit&id={$cita ->getId()}'><i class='lnr lnr-pencil'></i></a>
-                            <a href='?action=delete&id={$cita ->getId()}'><i class='lnr lnr-trash'></i></a>
-                        </td>
-                    </tr>
-                    ";
-                } ?>
-
-            </tbody>
-        </table>
+        </div>
     </main>
+
+    <footer class="footerContainer">
+        <button class="buttonBack">
+            <img src="./public/img/flecha.svg" alt="left arrow" class="imgBtBack_Next" />
+        </button>
+        <button class="buttonBack_Next">
+            <img src="./public/img/flecha.svg" alt="right arrow" class="imgBtBack_Next" />
+        </button>
+    </footer>
 </body>
 
 </html>

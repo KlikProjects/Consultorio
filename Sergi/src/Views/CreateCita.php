@@ -1,18 +1,26 @@
 <?php require_once("Components/Layout.php"); ?>
 
-<body>
-    <?php require_once("Components/Header.php"); ?>
-
-    <main class="container text-center">
-
-        <h2 class="text-center">Nueva Consulta</h2>
-
-        <form action='?action=store' method="post">
-            <input type="text" name="name" required placeholder="Nombre">
-            <input type="text" name="consulta" placeholder="Consulta">
-            <input type="submit" value="Crear">
-            <input type="reset" value="Reset">
+<body class="bodyUsuarioEdit">
+    <?php require_once("Components/HeaderAdd.php"); ?>
+    <main class="mainContainerSelectDate">
+        <form action='action=store' method="post">
+            <div class="formBoxOneConsulta">
+                <input type="text" placeholder="NOMBRE" class="boxName2" />
+                <button class="buttonDelete">
+                    <img src="./public/img/delete.svg" alt="close" class="imgDelete" />
+                </button>
+            </div>
+            <div class="formBoxTwoConsulta">
+                <textarea type="text" name="name" required class="boxConsulta2" id="" cols="30" rows="10" placeholder="CONSULTA"></textarea>
+            </div>
+            <div class="btPrincipalTotal">
+                <button class="buttonsPrincipals" type="submit" value="Crear">AÑADIR</button>
+                <button class="buttonsPrincipals">CONSULTAR</button>
+            </div>
         </form>
     </main>
+
+
+
 
 </body>
