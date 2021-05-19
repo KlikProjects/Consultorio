@@ -1,9 +1,9 @@
 <?php
 
-// namespace App;
+namespace App\Models;
 
-// use PDO;
-// use PDOException;
+use PDO;
+use PDOException;
 
 class Database
 {

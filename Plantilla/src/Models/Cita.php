@@ -1,11 +1,9 @@
 <?php
 
 
-//namespace App\Models;
+namespace Models;
 
-include 'Database.php';
-
-//use App\Database;
+use Database;
 
 class Cita
 {
