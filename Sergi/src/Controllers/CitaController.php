@@ -45,7 +45,6 @@ class CitaController
         $cita = new Cita();
         $citas = $cita->all();
 
-        
         new View("UsuarioCita", [
             "citas" => $citas,
         ]);
@@ -82,6 +81,6 @@ class CitaController
         $editCita = new Cita();
         $cita = $editCita->findById($id);
 
-        print_r($cita);
+        new View("EditCita", ["cita" => $cita]);
     }
 }
