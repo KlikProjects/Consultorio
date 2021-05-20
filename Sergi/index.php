@@ -8,8 +8,7 @@
 </head>
 
 <body>
-    <?php echo "hola"?>
-    <?php
+    <?php 
     
     require("vendor/autoload.php");
     require("src/index.php");
