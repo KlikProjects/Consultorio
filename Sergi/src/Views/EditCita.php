@@ -13,7 +13,7 @@
                     </button>
                 </div>
                 <div class="formBoxTwoConsulta">
-                    <textarea type="text" name="consulta" class="boxConsulta2" cols="30" rows="10" placeholder="CONSULTA"><?php print_r($data["cita"]->getConsulta()); ?></textarea>
+                    <textarea type="text" name="consulta" class="boxConsulta2" cols="30" rows="10" placeholder="CONSULTA"><?php echo ($data["cita"]->getConsulta()); ?></textarea>
                 </div>
                 <div class="btPrincipalTotal">
                     <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
