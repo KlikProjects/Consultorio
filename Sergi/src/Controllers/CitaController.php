@@ -83,7 +83,7 @@ class CitaController
         $cita = $deleteCita->findById($id);
         $cita->delete();
 
-        $this->index();
+        $this -> show();
     }
 
     public function edit($id)
