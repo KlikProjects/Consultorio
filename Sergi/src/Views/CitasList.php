@@ -1,6 +1,5 @@
 <?php require_once("Components/Layout.php"); ?>
 
-
 <body class="bodyCTO">
     <?php require_once("Components/HeaderCTO.php"); ?>
 
@@ -28,14 +27,6 @@
         </div>
     </main>
 
-    <footer class="footerContainer">
-        <button class="buttonBack">
-            <img src="./public/img/flecha.svg" alt="left arrow" class="imgBtBack_Next" />
-        </button>
-        <button class="buttonBack_Next">
-            <img src="./public/img/flecha.svg" alt="right arrow" class="imgBtBack_Next" />
-        </button>
-    </footer>
 </body>
 
 </html>

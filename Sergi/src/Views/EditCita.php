@@ -16,7 +16,7 @@
                     <textarea type="text" name="" class="boxConsulta2" id="" cols="30" rows="10" placeholder="CONSULTA"></textarea>
                 </div>
                 <div class="btPrincipalTotal">
-                    <button class="buttonsPrincipals" type="submit">EDITAR</button>
+                    <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
                     <button class="buttonsPrincipals">VOLVER</button>
                 </div>
             </main>

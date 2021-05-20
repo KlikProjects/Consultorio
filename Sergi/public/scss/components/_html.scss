@@ -2,7 +2,7 @@
 
 .mainContainerAllDate {
     overflow: scroll;
-    height: 78vh;
+    height: 85vh;
     scrollbar-width: none;
 }
 
@@ -10,11 +10,10 @@
     display: none;
 }
 
-.mainContainerSelectDate {}
-
 .footerContainer {
     @include footerContainer();
     position: fixed;
+    justify-content: center;
     bottom: 0%;
     width: 100vw;
     height: 10vh;
