@@ -16,7 +16,7 @@ class CitaController
     public function __construct()
     {
         if (isset($_GET["action"]) && ($_GET["action"] == "index")) {
-            $this->create();
+            $this->index();
 
             return;
         }
