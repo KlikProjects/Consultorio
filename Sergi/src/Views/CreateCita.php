@@ -11,19 +11,19 @@
                 </button>
             </div>
             <div class="formBoxTwoConsulta">
-                <textarea type="text" name="consulta" required class="boxConsulta2" id="" cols="30" rows="10" placeholder="CONSULTA"></textarea>
+                <textarea type="text" name="consulta" required class="boxConsulta2" placeholder="CONSULTA"></textarea>
             </div>
             <div class="btPrincipalTotal">
                 <button class="buttonsPrincipals" type="submit" value="Crear">AÑADIR</button>
             </div>
-    
+
         </form>
         <div class="btPrincipalTotal">
-                
-                <a href='?action=show'>
-                    <button class="buttonsPrincipals">CONSULTAR</button>
-                </a>
-            </div>
+
+            <a href='?action=show'>
+                <button class="buttonsPrincipals">CONSULTAR</button>
+            </a>
+        </div>
     </main>
 </body>
 

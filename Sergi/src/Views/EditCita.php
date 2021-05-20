@@ -13,7 +13,7 @@
                     </button>
                 </div>
                 <div class="formBoxTwoConsulta">
-                    <textarea type="text" name="consulta" class="boxConsulta2" cols="30" rows="10" placeholder="CONSULTA"><?php echo ($data["cita"]->getConsulta()); ?></textarea>
+                    <textarea type="text" name="consulta" class="boxConsulta2" placeholder="CONSULTA"><?php echo ($data["cita"]->getConsulta()); ?></textarea>
                 </div>
             </main>
             <div class="btPrincipalTotal">
@@ -22,7 +22,7 @@
         </form>
 
         <div class="btPrincipalTotal">
-    
+
             <a href='?action=index'>
                 <button class="buttonsPrincipals">VOLVER</button>
             </a>
