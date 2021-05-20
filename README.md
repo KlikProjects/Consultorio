@@ -1,15 +1,16 @@
-# Consultorio
+# MVC CRUD
 
-## Table of contents
+## Requiered
 
-1. [General Info](#general-info)
-2. [Design](#design)
-3. [Technologies](#technologies)
-4. [To do](#to-do)
-5. [Collaborators](#collaborators)
+- PHP 7.4
+- Composer installed
 
-## General Info
-***
+## Install
 
-Consultorio is an app that allows people to request an appointment with the CTO to solve technical problems of the development team. 
+- composer install
+
+## Run Tests
+
+- vendor/bin/phpunit
+
 
