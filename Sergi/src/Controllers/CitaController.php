@@ -69,7 +69,7 @@ class CitaController
 
     public function store(array $request): void
     {
-        $nuevaCita = new Cita($request['name'], $request['consulta']);
+        $nuevaCita = new Cita($request['nombre'], $request['consulta']);
         $nuevaCita->save();
 
         $this->index();
