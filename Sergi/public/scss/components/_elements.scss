@@ -89,10 +89,11 @@ $size:cover) {
     border: none;
     border-radius: 10px;
     height: 28px;
+ 
 }
 
 @mixin inputsText {
-    font-size: 10px;
+    font-size: 20px;
     padding-left: 2%;
     color: $color_principal;
 }
