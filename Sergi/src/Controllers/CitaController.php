@@ -43,6 +43,11 @@ class CitaController
             return;
         }
 
+        if (isset($_GET["action"]) && ($_GET["action"] == "update")) {
+            $this->update($_POST, $_GET["id"]);
+            return;
+        }
+
         $this->index();
     }
 
@@ -93,5 +98,17 @@ class CitaController
         $cita = $editCita->findById($id);
 
         new View("EditCita", ["cita" => $cita]);
+    }
+
+    public function update($request, $id)
+    {
+
+        $citaModificada = new Cita();
+        $cita = $citaModificada->findById($id);
+        $cita->modify($request["consulta"]);
+        $cita->update();
+
+        $this->index();
+    
     }
 }
