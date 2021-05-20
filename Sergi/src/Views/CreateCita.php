@@ -13,11 +13,13 @@
             <div class="formBoxTwoConsulta">
                 <textarea type="text" name="name" required class="boxConsulta2" id="" cols="30" rows="10" placeholder="CONSULTA"></textarea>
             </div>
-            <div class="btPrincipalTotal">
-                <button class="buttonsPrincipals" type="submit" value="Crear">AÑADIR</button>
-                <button class="buttonsPrincipals">CONSULTAR</button>
-            </div>
         </form>
+        <div class="btPrincipalTotal">
+                <button class="buttonsPrincipals" type="submit" value="Crear">AÑADIR</button>
+                <a href='?action=show'>
+                    <button class="buttonsPrincipals">CONSULTAR</button>
+                </a>
+            </div>
     </main>
 </body>
 

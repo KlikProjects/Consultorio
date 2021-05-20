@@ -33,7 +33,9 @@
     </main>
 
     <footer class="footerContainer">
-        <button class="buttonsPrincipals">VOLVER</button>
+        <a href="?action=create">
+         <button class="buttonsPrincipals">VOLVER</button>
+        </a>
     </footer>
 
 </body>

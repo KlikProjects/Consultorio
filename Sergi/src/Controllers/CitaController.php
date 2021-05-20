@@ -15,8 +15,14 @@ class CitaController
 {
     public function __construct()
     {
-        if (isset($_GET["action"]) && ($_GET["action"] == "create")) {
+        if (isset($_GET["action"]) && ($_GET["action"] == "index")) {
             $this->create();
+
+            return;
+        }
+
+        if (isset($_GET["action"]) && ($_GET["action"] == "show")) {
+            $this->show();
 
             return;
         }
@@ -40,7 +46,18 @@ class CitaController
         $this->index();
     }
 
-    public function index()
+    public function index():void
+    {
+        $cita = new Cita();
+        $citas = $cita->all();
+
+        new View("CreateCita", [
+            "citas" => $citas,
+        ]);
+    }
+
+    
+    public function show(): void
     {
         $cita = new Cita();
         $citas = $cita->all();
@@ -48,13 +65,6 @@ class CitaController
         new View("UsuarioCita", [
             "citas" => $citas,
         ]);
-    }
-
-
-
-    public function create(): void
-    {
-        new View("CreateCita");
     }
 
     public function store(array $request): void
