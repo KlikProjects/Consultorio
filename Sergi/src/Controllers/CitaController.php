@@ -78,6 +78,7 @@ class CitaController
 
     public function edit($id)
     {
+        
         $editCita = new Cita();
         $cita = $editCita->findById($id);
 
