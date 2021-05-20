@@ -21,6 +21,12 @@ class CitaController
             return;
         }
 
+        if (isset($_GET["action"]) && ($_GET["action"] == "indexCTO")) {
+            $this->indexCTO();
+
+            return;
+        }
+
         if (isset($_GET["action"]) && ($_GET["action"] == "show")) {
             $this->show();
 
@@ -57,6 +63,16 @@ class CitaController
         $citas = $cita->all();
 
         new View("CreateCita", [
+            "citas" => $citas,
+        ]);
+    }
+
+    public function indexCTO():void
+    {
+        $cita = new Cita();
+        $citas = $cita->all();
+
+        new View("CitasList", [
             "citas" => $citas,
         ]);
     }

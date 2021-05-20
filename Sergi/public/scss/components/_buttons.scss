@@ -31,3 +31,23 @@
 .imgBtBack_Next {
     @include imgBtBack_Next();
 }
+
+.cto {
+    @include display();
+    background-color: $color_header1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color_headerBorder;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 2%;
+    z-index: 1;
+}
+
+.imgCto {
+    width: 90%;
+    height: auto;
+    filter: invert(100%);
+}
