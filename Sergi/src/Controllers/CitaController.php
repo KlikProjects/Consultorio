@@ -8,7 +8,7 @@ use App\Database;
 use App\Models\Cita;
 
 
-require_once("./src/Logger.php"); 
+require_once("./src/Logger.php");
 
 class CitaController
 
@@ -17,7 +17,7 @@ class CitaController
     {
         if (isset($_GET["action"]) && ($_GET["action"] == "create")) {
             $this->create();
-            
+
             return;
         }
 
@@ -30,7 +30,7 @@ class CitaController
             $this->edit($_GET["id"]);
             return;
         }
-    
+
         if (isset($_GET["action"]) && ($_GET["action"] == "delete")) {
 
             $this->delete($_GET["id"]);
@@ -45,12 +45,13 @@ class CitaController
         $cita = new Cita();
         $citas = $cita->all();
 
-        new View("CitasList", [
+        
+        new View("UsuarioCita", [
             "citas" => $citas,
         ]);
     }
 
-    
+
 
     public function create(): void
     {
@@ -60,9 +61,9 @@ class CitaController
     public function store(array $request): void
     {
         $nuevaCita = new Cita($request['name'], $request['consulta']);
-        $nuevaCita -> save();
+        $nuevaCita->save();
 
-        $this -> index();
+        $this->index();
     }
 
 
@@ -81,11 +82,6 @@ class CitaController
         $editCita = new Cita();
         $cita = $editCita->findById($id);
 
-        
-        //Execute view of the cita with information
-        new View("EditCita", ["cita" => $cita]);
+        print_r($cita);
     }
-
-
 }
-
