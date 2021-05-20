@@ -94,8 +94,17 @@ class Cita
 
     }
 
-    //     return new Student($result[0]["name"], $result[0]["id"], $result[0]["created_at"]);
-    // }
+    public function modify($consulta)
+    {
+        $this->consulta = $consulta;
+    }
+
+    public function update()
+    {
+        $this->database->mysql->query("UPDATE `citascoders` SET `consulta` =  '{$this->consulta}' WHERE `id` = {$this->id}");
+    }
+    
+    
 
     // public function UpdateById($data, $id)
     //  {

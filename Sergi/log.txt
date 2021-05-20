@@ -200,3 +200,9 @@
 20/05/2021 14:25:20 Klik ha hecho una consulta: Qué es php?
 20/05/2021 14:25:29 Klik ha hecho una consulta: Qué es php?
 20/05/2021 14:25:50 Klik ha hecho una consulta: Qué es php?
+20/05/2021 17:17:37 gabi ha hecho una consulta: por qué
+20/05/2021 17:19:37 gabi ha hecho una consulta: por qué
+20/05/2021 17:20:16 gabi ha hecho una consulta: por qué
+20/05/2021 17:20:36 gabi ha hecho una consulta: modificado algo
+20/05/2021 17:20:47 gabi ha hecho una consulta: modificado algo asdasdqw qwdfqdqwd
+20/05/2021 17:24:26 gabi ha hecho una consulta: por qué me gusta tanto el CRUD

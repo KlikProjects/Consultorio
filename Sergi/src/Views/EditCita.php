@@ -16,10 +16,13 @@
                     <textarea type="text" name="consulta" class="boxConsulta2" cols="30" rows="10" placeholder="CONSULTA"><?php echo ($data["cita"]->getConsulta()); ?></textarea>
                 </div>
             </main>
+            <div class="btPrincipalTotal">
+                <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
+            </div>
         </form>
 
         <div class="btPrincipalTotal">
-            <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
+    
             <a href='?action=index'>
                 <button class="buttonsPrincipals">VOLVER</button>
             </a>
