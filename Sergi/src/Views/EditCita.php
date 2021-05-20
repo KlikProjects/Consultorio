@@ -20,7 +20,9 @@
 
         <div class="btPrincipalTotal">
             <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
-            <button class="buttonsPrincipals">VOLVER</button>
+            <a href='?action=index'>
+                <button class="buttonsPrincipals">VOLVER</button>
+            </a>
         </div>
     </main>
 
