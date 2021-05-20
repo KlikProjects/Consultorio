@@ -22,8 +22,11 @@
                         </button>
                     </a>
                     <a href='?action=edit&id={$cita->getId()}'>
-                        <input class='checkbox' type='checkbox'/>
+                    <button class='buttonDelete'>
+                            <img src='./public/img/lapiz.svg' alt='edit' class='imgDelete'/>
+                        </button>
                     </a>
+                    
                 </div>";
         } ?>
 
