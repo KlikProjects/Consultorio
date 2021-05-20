@@ -32,6 +32,7 @@
 
 input[type=text] {
     @include inputsText();
+    
 }
 
 input[type=date] {
