@@ -207,4 +207,7 @@
 20/05/2021 17:20:47 gabi ha hecho una consulta: modificado algo asdasdqw qwdfqdqwd
 20/05/2021 17:24:26 gabi ha hecho una consulta: por qué me gusta tanto el CRUD
 20/05/2021 17:36:15 Joan ha hecho una consulta: resisteix  sempre !
+<<<<<<< HEAD
 20/05/2021 17:52:19 sergio ha hecho una consulta: por qué qué qué món !
+=======
+>>>>>>> cc7ed247530038a9b3567ea6b522c7035d6230da
