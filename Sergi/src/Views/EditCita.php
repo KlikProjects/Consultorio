@@ -7,13 +7,13 @@
 
             <main class="mainContainerSelectDate">
                 <div class="formBoxOneConsulta">
-                    <input type="text" placeholder="NOMBRE" class="boxName2" name="name" required value="<?php echo $data["cita"]->getName() ?>" />
+                    <input type="text" placeholder="NOMBRE" class="boxName2" name="name" required value='<?php echo ($data["cita"]->getNombre()); ?>' />
                     <button class="buttonDelete">
                         <img src="./public/img/delete.svg" alt="close" class="imgDelete" />
                     </button>
                 </div>
                 <div class="formBoxTwoConsulta">
-                    <textarea type="text" name="" class="boxConsulta2" id="" cols="30" rows="10" placeholder="CONSULTA"></textarea>
+                    <textarea type="text" name="consulta" class="boxConsulta2" cols="30" rows="10" placeholder="CONSULTA"><?php print_r($data["cita"]->getConsulta()); ?></textarea>
                 </div>
                 <div class="btPrincipalTotal">
                     <button class="buttonsPrincipals" type="submit">CONFIRMAR</button>
@@ -25,7 +25,6 @@
         </form>
     </main>
 
-
-
-
 </body>
+
+</html>
