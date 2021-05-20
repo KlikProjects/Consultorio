@@ -32,7 +32,6 @@
 
 input[type=text] {
     @include inputsText();
-    
 }
 
 input[type=date] {
@@ -42,7 +41,9 @@ input[type=date] {
 textarea[type=text] {
     @include inputsText();
     color: black;
-    padding-top: 2%;
+    height: 69%;
+    width: 96%;
+    padding: 2%;
 }
 
 .formBoxOne {
