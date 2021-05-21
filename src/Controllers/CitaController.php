@@ -8,7 +8,7 @@ use App\Database;
 use App\Models\Cita;
 
 
-require_once("./src/Logger.php");
+require_once("src/Logger.php");
 
 class CitaController
 
