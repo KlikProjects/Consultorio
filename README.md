@@ -28,7 +28,7 @@ The design was made with figma after thinking which was the best option to write
 
 ## Technologies
 ***
-HTML5, CSS3, Sass, PHP, Figma, MySql, PHPMyAdmin-PDO.
+HTML5, CSS3, Sass, PHP, Figma, MySql, PHPMyAdmin-PDO,Heroku.
 
 ## Web
 ***
