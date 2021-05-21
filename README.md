@@ -26,7 +26,7 @@ The design was made with figma after thinking which was the best option to write
 
 <img width="821" alt="Captura de pantalla 2021-05-20 a las 21 28 48" src="https://user-images.githubusercontent.com/82206421/119037791-b52eea00-b9b2-11eb-8b19-3be1ab4c3fe1.png">
 
-## Technologies adn Tools
+## Technologies and Tools
 ***
 HTML5, CSS3, Sass, PHP, Figma, MySql, PHPMyAdmin-PDO.
 
